@@ -1,0 +1,13 @@
+options:
+  - name: name
+    description: The name of the screen
+    question: What is the name of your screen?
+    required: true
+    type: string
+files:
+  - template: View.stencil
+    path: "{{ name }}View.swift"
+  - template: ViewModel.stencil
+    path: "{{ name }}ViewModel.swift"
+  - template: Environment.stencil
+    path: "{{ name }}Environment.swift"

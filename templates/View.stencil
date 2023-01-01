@@ -1,0 +1,14 @@
+import SwiftUI
+
+struct {{ name }}View: View {
+    @StateObject var viewModel: {{ name }}ViewModel
+
+    var body: some View {
+        Button(action: {
+            viewModel.input.didTapButton.send(())
+        }, label: {
+            Text("Tap!")
+        })
+    }
+}
+
