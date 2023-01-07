@@ -4,7 +4,7 @@ import Combine
 import CombineStorable
 
 // MARK: - ViewModel
-final class {{ name }}TodoViewModel: NSObject, ObservableObject, Storable {
+final class {{ name }}ViewModel: NSObject, ObservableObject, Storable {
 	let input: Input
 	let output: Output
 	@ObservedObject var binding: Binding
