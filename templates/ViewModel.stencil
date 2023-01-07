@@ -12,7 +12,7 @@ final class {{ name }}ViewModel: NSObject, ObservableObject, Storable {
 	init(
 		input: Input = .init(),
 		output: Output = .init(),
-		binding: Binding = .init(),
+		binding: Binding = .init()
 	) {
 		self.input = input
 		self.output = output
