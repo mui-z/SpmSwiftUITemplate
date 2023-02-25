@@ -4,7 +4,7 @@ import Combine
 
 // MARK: - ViewModel
 @MainActor
-final class {{ name }}ViewModel: NSObject, ObservableObject {
+final class ContentViewModel: NSObject, ObservableObject {
 	@Published var tapTimes: Int = 0
 	
 	func tapButton() {
