@@ -1,7 +1,0 @@
-import Foundation
-import SwiftUI
-
-struct {{ name }}Environemnt: DynamicProperty {
-	@Environment(\.dismiss) var dismiss
-}
-
