@@ -2,4 +2,10 @@
 
 SwiftUI Simple lightweight template.
 
+
+```sh
+# generate template.
+make template
+```
+
 ref: https://zenn.dev/treastrain/articles/e5a3911228b250
