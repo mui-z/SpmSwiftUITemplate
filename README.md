@@ -4,7 +4,7 @@ SwiftUI Simple lightweight template.
 
 
 ```sh
-# generate template.
+# generate template View and ViewModel
 make template
 ```
 
