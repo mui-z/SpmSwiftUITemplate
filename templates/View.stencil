@@ -1,17 +1,17 @@
 import SwiftUI
 
 struct {{ name }}View: View {
-    @StateObject var viewModel: {{ name }}ViewModel
+  @StateObject var viewModel: {{ name }}ViewModel
 
-    var body: some View {
-        VStack {
-            Text(viewModel.tapTimes)
-            Button(action: {
-                viewModel.tapButton()
-            }, label: {
-                Text("Tap!")
-            })
-        }
+  var body: some View {
+    VStack {
+      Text(viewModel.tapTimes.description)
+      Button(action: {
+          viewModel.tapButton()
+      }, label: {
+          Text("Tap!")
+      })
     }
+  }
 }
 

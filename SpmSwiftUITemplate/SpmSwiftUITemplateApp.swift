@@ -10,9 +10,9 @@ import SpmSwiftUITemplatePackage
 
 @main
 struct SpmSwiftUITemplateApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
     }
+  }
 }
