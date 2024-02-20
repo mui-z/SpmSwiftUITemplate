@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
   name: "SpmSwiftUITemplatePackage",
-  platforms: [.iOS(.v16)],
+  platforms: [.iOS(.v17)],
   products: [
     // Products define the executables and libraries a package produces, and make them visible to other packages.
     .library(
