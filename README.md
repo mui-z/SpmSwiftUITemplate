@@ -4,8 +4,15 @@ SwiftUI Simple lightweight template.
 
 
 ```sh
-# generate template View and ViewModel
-$ make template
+# Rename project
+mint install mui-z/xrename
+xrename SpmSwiftUITemplate <your-project-name>
+
+
+# Generate template View and ViewModel
+make template
 ```
 
 ref: https://zenn.dev/treastrain/articles/e5a3911228b250
+
+
