@@ -9,6 +9,10 @@ mint install mui-z/xrename
 xrename SpmSwiftUITemplate <your-project-name>
 
 
+# Reformat
+make reformat
+
+
 # Generate template View and ViewModel
 make template
 ```
