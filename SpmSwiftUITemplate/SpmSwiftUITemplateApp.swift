@@ -5,8 +5,8 @@
 //  Created by osushi on 2022/03/05.
 //
 
-import SwiftUI
 import SpmSwiftUITemplatePackage
+import SwiftUI
 
 @main
 struct SpmSwiftUITemplateApp: App {

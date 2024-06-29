@@ -10,7 +10,8 @@ let package = Package(
     // Products define the executables and libraries a package produces, and make them visible to other packages.
     .library(
       name: "SpmSwiftUITemplatePackage",
-      targets: ["SpmSwiftUITemplatePackage"]),
+      targets: ["SpmSwiftUITemplatePackage"]
+    ),
   ],
   dependencies: [
     // Dependencies declare other packages that this package depends on.
@@ -29,10 +30,12 @@ let package = Package(
         .product(
           name: "ComposableArchitecture",
           package: "swift-composable-architecture"
-        )
-      ]),
+        ),
+      ]
+    ),
     .testTarget(
       name: "SpmSwiftUITemplatePackageTests",
-      dependencies: ["SpmSwiftUITemplatePackage"]),
+      dependencies: ["SpmSwiftUITemplatePackage"]
+    ),
   ]
 )
