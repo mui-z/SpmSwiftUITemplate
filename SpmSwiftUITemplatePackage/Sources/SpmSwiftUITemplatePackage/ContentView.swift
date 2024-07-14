@@ -21,7 +21,7 @@ public struct Content {
           state.count += 1
           return .none
         case .decrement:
-          state.count += 1
+          state.count -= 1
           return .none
       }
     }
