@@ -1,17 +1,52 @@
 import SwiftUI
+import ComposableArchitecture
 
-struct {{ name }}View: View {
-  @StateObject var viewModel: {{ name }}ViewModel
 
-  var body: some View {
-    VStack {
-      Text(viewModel.tapTimes.description)
-      Button(action: {
-          viewModel.tapButton()
-      }, label: {
-          Text("Tap!")
-      })
+@Reducer
+struct {{ name }} {
+  @ObservableState
+  struct State {
+    var count = 0
+  }
+  
+  enum Action {
+    case increment
+    case decrement
+  }
+  
+  var body: some Reducer<State, Action> {
+    Reduce { state, action in
+      switch action {
+        case .increment:
+          state.count += 1
+          return .none
+        case .decrement:
+          state.count += 1
+          return .none
+      }
     }
   }
 }
 
+
+struct {{ name }}View: View {
+  public init() {
+    store = Store(initialState: .init(), reducer: { {{ name }}() })
+  }
+  
+  let store: StoreOf<{{ name }}>
+  
+  var body: some View {
+    VStack {
+      Text(store.count.description)
+      HStack {
+        Button("-") {
+          store.send(.decrement)
+        }
+        Button("+") {
+          store.send(.increment)
+        }
+      }
+    }
+  }
+}
