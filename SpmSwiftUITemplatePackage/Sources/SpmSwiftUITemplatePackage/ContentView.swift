@@ -1,18 +1,17 @@
 import SwiftUI
 
-public struct ContentView: View {
-  public init() {}
+struct ContentView: View {
+  @StateObject var viewModel: ContentViewModel
 
-  @StateObject var viewModel: ContentViewModel = .init()
-
-  public var body: some View {
+  var body: some View {
     VStack {
       Text(viewModel.tapTimes.description)
       Button(action: {
-        viewModel.tapButton()
+          viewModel.tapButton()
       }, label: {
-        Text("Tap!")
+          Text("Tap!")
       })
     }
   }
 }
+
