@@ -13,7 +13,7 @@ xrename SpmSwiftUITemplate <your-project-name>
 make reformat
 
 
-# Generate template View and ViewModel
+# Generate template View, Reducer 
 make template
 ```
 
