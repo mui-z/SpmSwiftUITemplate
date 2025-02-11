@@ -1,9 +1,10 @@
 import SwiftUI
+
 import ComposableArchitecture
 
 
 @Reducer
-struct {{ name }} {
+struct {{ name }}Reducer {
   @ObservableState
   struct State {
     var count = 0
@@ -31,10 +32,10 @@ struct {{ name }} {
 
 struct {{ name }}View: View {
   public init() {
-    store = Store(initialState: .init(), reducer: { {{ name }}() })
+    store = Store(initialState: .init(), reducer: { {{ name }}Reducer() })
   }
   
-  let store: StoreOf<{{ name }}>
+  let store: StoreOf<{{ name }}Reducer>
   
   var body: some View {
     VStack {
