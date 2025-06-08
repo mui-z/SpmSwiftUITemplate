@@ -3,16 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		751B0CCC27D384710011BA70 /* SpmSwiftUITemplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751B0CCB27D384710011BA70 /* SpmSwiftUITemplateApp.swift */; };
-		751B0CD027D384720011BA70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 751B0CCF27D384720011BA70 /* Assets.xcassets */; };
-		751B0CD327D384720011BA70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 751B0CD227D384720011BA70 /* Preview Assets.xcassets */; };
-		751B0CDD27D384730011BA70 /* SpmSwiftUITemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751B0CDC27D384730011BA70 /* SpmSwiftUITemplateTests.swift */; };
-		751B0CE727D384730011BA70 /* SpmSwiftUITemplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751B0CE627D384730011BA70 /* SpmSwiftUITemplateUITests.swift */; };
-		751B0CE927D384730011BA70 /* SpmSwiftUITemplateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751B0CE827D384730011BA70 /* SpmSwiftUITemplateUITestsLaunchTests.swift */; };
 		751B0CF927D386660011BA70 /* SpmSwiftUITemplatePackage in Frameworks */ = {isa = PBXBuildFile; productRef = 751B0CF827D386660011BA70 /* SpmSwiftUITemplatePackage */; };
 /* End PBXBuildFile section */
 
@@ -35,16 +29,25 @@
 
 /* Begin PBXFileReference section */
 		751B0CC827D384710011BA70 /* SpmSwiftUITemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpmSwiftUITemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		751B0CCB27D384710011BA70 /* SpmSwiftUITemplateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpmSwiftUITemplateApp.swift; sourceTree = "<group>"; };
-		751B0CCF27D384720011BA70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		751B0CD227D384720011BA70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		751B0CD827D384730011BA70 /* SpmSwiftUITemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpmSwiftUITemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		751B0CDC27D384730011BA70 /* SpmSwiftUITemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpmSwiftUITemplateTests.swift; sourceTree = "<group>"; };
 		751B0CE227D384730011BA70 /* SpmSwiftUITemplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpmSwiftUITemplateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		751B0CE627D384730011BA70 /* SpmSwiftUITemplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpmSwiftUITemplateUITests.swift; sourceTree = "<group>"; };
-		751B0CE827D384730011BA70 /* SpmSwiftUITemplateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpmSwiftUITemplateUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		751B0CF627D3851A0011BA70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		754AFD392DF538E100210B82 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 751B0CC727D384710011BA70 /* SpmSwiftUITemplate */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		754AFD342DF538E100210B82 /* SpmSwiftUITemplate */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (754AFD392DF538E100210B82 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = SpmSwiftUITemplate; sourceTree = "<group>"; };
+		754AFD3B2DF538E800210B82 /* SpmSwiftUITemplateTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = SpmSwiftUITemplateTests; sourceTree = "<group>"; };
+		754AFD3F2DF538EC00210B82 /* SpmSwiftUITemplateUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = SpmSwiftUITemplateUITests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		751B0CC527D384710011BA70 /* Frameworks */ = {
@@ -75,9 +78,9 @@
 		751B0CBF27D384710011BA70 = {
 			isa = PBXGroup;
 			children = (
-				751B0CCA27D384710011BA70 /* SpmSwiftUITemplate */,
-				751B0CDB27D384730011BA70 /* SpmSwiftUITemplateTests */,
-				751B0CE527D384730011BA70 /* SpmSwiftUITemplateUITests */,
+				754AFD342DF538E100210B82 /* SpmSwiftUITemplate */,
+				754AFD3B2DF538E800210B82 /* SpmSwiftUITemplateTests */,
+				754AFD3F2DF538EC00210B82 /* SpmSwiftUITemplateUITests */,
 				751B0CC927D384710011BA70 /* Products */,
 				751B0CF727D386660011BA70 /* Frameworks */,
 			);
@@ -91,42 +94,6 @@
 				751B0CE227D384730011BA70 /* SpmSwiftUITemplateUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		751B0CCA27D384710011BA70 /* SpmSwiftUITemplate */ = {
-			isa = PBXGroup;
-			children = (
-				751B0CF627D3851A0011BA70 /* Info.plist */,
-				751B0CCB27D384710011BA70 /* SpmSwiftUITemplateApp.swift */,
-				751B0CCF27D384720011BA70 /* Assets.xcassets */,
-				751B0CD127D384720011BA70 /* Preview Content */,
-			);
-			path = SpmSwiftUITemplate;
-			sourceTree = "<group>";
-		};
-		751B0CD127D384720011BA70 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				751B0CD227D384720011BA70 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		751B0CDB27D384730011BA70 /* SpmSwiftUITemplateTests */ = {
-			isa = PBXGroup;
-			children = (
-				751B0CDC27D384730011BA70 /* SpmSwiftUITemplateTests.swift */,
-			);
-			path = SpmSwiftUITemplateTests;
-			sourceTree = "<group>";
-		};
-		751B0CE527D384730011BA70 /* SpmSwiftUITemplateUITests */ = {
-			isa = PBXGroup;
-			children = (
-				751B0CE627D384730011BA70 /* SpmSwiftUITemplateUITests.swift */,
-				751B0CE827D384730011BA70 /* SpmSwiftUITemplateUITestsLaunchTests.swift */,
-			);
-			path = SpmSwiftUITemplateUITests;
 			sourceTree = "<group>";
 		};
 		751B0CF727D386660011BA70 /* Frameworks */ = {
@@ -151,6 +118,9 @@
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				754AFD342DF538E100210B82 /* SpmSwiftUITemplate */,
+			);
 			name = SpmSwiftUITemplate;
 			packageProductDependencies = (
 				751B0CF827D386660011BA70 /* SpmSwiftUITemplatePackage */,
@@ -172,6 +142,9 @@
 			dependencies = (
 				751B0CDA27D384730011BA70 /* PBXTargetDependency */,
 			);
+			fileSystemSynchronizedGroups = (
+				754AFD3B2DF538E800210B82 /* SpmSwiftUITemplateTests */,
+			);
 			name = SpmSwiftUITemplateTests;
 			productName = SpmSwiftUITemplateTests;
 			productReference = 751B0CD827D384730011BA70 /* SpmSwiftUITemplateTests.xctest */;
@@ -189,6 +162,9 @@
 			);
 			dependencies = (
 				751B0CE427D384730011BA70 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				754AFD3F2DF538EC00210B82 /* SpmSwiftUITemplateUITests */,
 			);
 			name = SpmSwiftUITemplateUITests;
 			productName = SpmSwiftUITemplateUITests;
@@ -243,8 +219,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				751B0CD327D384720011BA70 /* Preview Assets.xcassets in Resources */,
-				751B0CD027D384720011BA70 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +243,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				751B0CCC27D384710011BA70 /* SpmSwiftUITemplateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				751B0CDD27D384730011BA70 /* SpmSwiftUITemplateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,8 +257,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				751B0CE727D384730011BA70 /* SpmSwiftUITemplateUITests.swift in Sources */,
-				751B0CE927D384730011BA70 /* SpmSwiftUITemplateUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,7 +461,6 @@
 		751B0CF027D384730011BA70 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -515,7 +484,6 @@
 		751B0CF127D384730011BA70 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -539,7 +507,6 @@
 		751B0CF327D384730011BA70 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -562,7 +529,6 @@
 		751B0CF427D384730011BA70 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
