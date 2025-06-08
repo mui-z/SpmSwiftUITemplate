@@ -22,11 +22,11 @@ let package = Package(
     .target(
       name: "SpmSwiftUITemplatePackage",
       dependencies: [
-      ]
+      ],
     ),
     .testTarget(
       name: "SpmSwiftUITemplatePackageTests",
-      dependencies: ["SpmSwiftUITemplatePackage"]
+      dependencies: ["SpmSwiftUITemplatePackage"],
     ),
-  ]
+  ],
 )
