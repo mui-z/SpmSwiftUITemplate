@@ -1,10 +1,12 @@
 import SwiftUI
 import Observation
 
-struct {{ name }}View: View {
-    @State private var viewModel = {{ name }}ViewModel()
+public struct RootView: View {
+    @State private var viewModel = RootViewModel()
     
-    var body: some View {
+    public init() {}
+    
+    public var body: some View {
         VStack {
             Text(viewModel.count.description)
                 .font(.title)

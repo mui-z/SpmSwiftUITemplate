@@ -7,3 +7,5 @@ options:
 files:
   - template: View.stencil
     path: "{{ name }}View.swift"
+  - template: ViewModel.stencil
+    path: "{{ name }}ViewModel.swift"

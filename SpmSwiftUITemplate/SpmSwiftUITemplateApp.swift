@@ -12,7 +12,7 @@ import SwiftUI
 struct SpmSwiftUITemplateApp: App {
   var body: some Scene {
     WindowGroup {
-      ContentView()
+      RootView()
     }
   }
 }
